@@ -1,0 +1,9 @@
+.\hex\cjson.o: ..\JSON\JSON_src\cJSON.c
+.\hex\cjson.o: D:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\hex\cjson.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\hex\cjson.o: D:\Keil\ARM\ARMCC\bin\..\include\math.h
+.\hex\cjson.o: D:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\hex\cjson.o: D:\Keil\ARM\ARMCC\bin\..\include\float.h
+.\hex\cjson.o: D:\Keil\ARM\ARMCC\bin\..\include\limits.h
+.\hex\cjson.o: D:\Keil\ARM\ARMCC\bin\..\include\ctype.h
+.\hex\cjson.o: ..\JSON\JSON_inc\cJSON.h

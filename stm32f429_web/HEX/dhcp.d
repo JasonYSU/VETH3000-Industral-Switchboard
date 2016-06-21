@@ -1,0 +1,11 @@
+.\hex\dhcp.o: ..\lwip\lwip_src\dhcp.c
+.\hex\dhcp.o: ..\lwip\lwip_incl\opt.h
+.\hex\dhcp.o: ..\lwip\lwip_incl\lwipopts.h
+.\hex\dhcp.o: ..\lwip\lwip_incl\debug.h
+.\hex\dhcp.o: ..\lwip\lwip_incl\arch.h
+.\hex\dhcp.o: ..\lwip\lwip_incl\cc.h
+.\hex\dhcp.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\hex\dhcp.o: D:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\hex\dhcp.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\hex\dhcp.o: D:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\hex\dhcp.o: ..\lwip\lwip_incl\opt.h

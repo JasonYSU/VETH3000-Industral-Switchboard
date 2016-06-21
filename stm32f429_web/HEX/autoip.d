@@ -1,0 +1,11 @@
+.\hex\autoip.o: ..\lwip\lwip_src\autoip.c
+.\hex\autoip.o: ..\lwip\lwip_incl\opt.h
+.\hex\autoip.o: ..\lwip\lwip_incl\lwipopts.h
+.\hex\autoip.o: ..\lwip\lwip_incl\debug.h
+.\hex\autoip.o: ..\lwip\lwip_incl\arch.h
+.\hex\autoip.o: ..\lwip\lwip_incl\cc.h
+.\hex\autoip.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\hex\autoip.o: D:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\hex\autoip.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\hex\autoip.o: D:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\hex\autoip.o: ..\lwip\lwip_incl\opt.h

@@ -1,0 +1,84 @@
+#include "SerialServerUdp.h"
+#include "SerialUtility.h"
+#include "uip.h"
+static char send_data(char *content,uint32_t data_len){
+	/* 在发送udp数据前 重置数据发送的指针 */
+	uip_send(content,data_len);
+	//printf("udp send data is\n\r %s\n\r",uip_sappdata);
+	return 1;
+}
+void serialUDPServerAppcall(void) {
+    struct udp_serial_server *udp_serial_state = (struct udp_serial_server *)&(uip_udp_conn->udp_serial_server_state);
+    if(udp_serial_state != NULL) {
+        handleUdpSerialConnection(udp_serial_state);
+    }
+}
+void addUdpSerialListenPort(uint16_t port_no) {
+    int i;
+    int isExistPort = 0;
+    for(i = 0; i < UIP_LISTENPORTS; i++) {
+        if(udp_serial_listenports[i] == 0) { //该端口号不存在，需要添加，i是可用的下标号
+            break;
+        }
+        if(udp_serial_listenports[i] == port_no) {
+            isExistPort = 1;
+            break;
+        }
+    }
+    if( !isExistPort) {
+        udp_serial_listenports[i] = port_no;
+    }
+
+}
+void unlistenUdpSerialPort(uint16_t port_no){
+	int i;
+	for(i = 0; i < UIP_LISTENPORTS;i++){
+		if(udp_serial_listenports[i] == port_no){
+			udp_serial_listenports[i] = 0;
+			return;
+		}
+	}
+}
+int isUdpSerialServerRequest(uint16_t request_port) {
+    int i;
+    for(i = 0; i < UIP_LISTENPORTS; i++) {
+        if(udp_serial_listenports[i] == request_port) { //是串口服务器对应的监听端口
+            return 1;
+        }
+    }
+    return 0;
+}
+void handleUdpSerialConnection(struct udp_serial_server *udp_serial_server) {
+    if( !uip_poll()){
+		handleUdpSerialInput(udp_serial_server);
+		//handleUdpSerialOutput(udp_serial_server);
+	}
+	
+}
+PT_THREAD(handleUdpSerialInput(struct udp_serial_server *udp_serial_server)) {
+	int i;
+   if(uip_newdata()) {  //判断是否有新数据
+        memset(udp_serial_server->inputbuf,0,sizeof(udp_serial_server->inputbuf));
+        //printf("recv data length is %d\n\r",uip_len);
+        PSOCK_BEGIN(&udp_serial_server->serial_in);
+        PSOCK_INIT(&udp_serial_server->serial_in,udp_serial_server->inputbuf,uip_len);
+        //server_begin_time = msCount;
+        PSOCK_READBUF(&udp_serial_server->serial_in);//读指定大小的数据到buf中
+		udp_serial_server->len = uip_len;
+		for(i = 0; i < MAX_SERIAL_NUM; i++){
+			if(board.serial_config[i].serial_listen_port == uip_udp_conn->lport){
+				break;
+			}
+		}
+		addDataToServerQueue((uint8_t*)udp_serial_server->inputbuf,uip_len,i);
+		printf("serial server recv remote udp data length is %d;content is\n\r %s\n\r",uip_len,udp_serial_server->inputbuf);
+        PSOCK_END(&udp_serial_server->serial_in);
+    }
+}
+PT_THREAD(handleUdpSerialOutput(struct udp_serial_server * udp_serial_server)) {
+	//char udp_response_data[] = "udp serial server recv data successful";
+	PSOCK_BEGIN(&udp_serial_server->serial_in);
+	PT_WAIT_UNTIL(&udp_serial_server->serial_out.psockpt,send_data(udp_serial_server->inputbuf,udp_serial_server->len));
+	//printf("response data copy successful\n\r");
+	PSOCK_END(&udp_serial_server->serial_in);
+}

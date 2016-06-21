@@ -1,0 +1,17 @@
+.\hex\timer.o: ..\webserver\webserver_src\timer.c
+.\hex\timer.o: D:\Keil\ARM\ARMCC\bin\..\include\stddef.h
+.\hex\timer.o: D:\Keil\ARM\ARMCC\bin\..\include\signal.h
+.\hex\timer.o: ..\webserver\webserver_incl\timer.h
+.\hex\timer.o: ..\lwip\lwip_incl\snmp.h
+.\hex\timer.o: ..\lwip\lwip_incl\opt.h
+.\hex\timer.o: ..\lwip\lwip_incl\lwipopts.h
+.\hex\timer.o: ..\lwip\lwip_incl\debug.h
+.\hex\timer.o: ..\lwip\lwip_incl\arch.h
+.\hex\timer.o: ..\lwip\lwip_incl\cc.h
+.\hex\timer.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\hex\timer.o: D:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\hex\timer.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\hex\timer.o: D:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\hex\timer.o: ..\lwip\lwip_incl\opt.h
+.\hex\timer.o: ..\lwip\lwip_incl\ip_addr.h
+.\hex\timer.o: ..\lwip\lwip_incl\def.h

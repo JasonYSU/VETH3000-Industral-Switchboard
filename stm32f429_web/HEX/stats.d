@@ -1,0 +1,17 @@
+.\hex\stats.o: ..\lwip\lwip_src\stats.c
+.\hex\stats.o: ..\lwip\lwip_incl\opt.h
+.\hex\stats.o: ..\lwip\lwip_incl\lwipopts.h
+.\hex\stats.o: ..\lwip\lwip_incl\debug.h
+.\hex\stats.o: ..\lwip\lwip_incl\arch.h
+.\hex\stats.o: ..\lwip\lwip_incl\cc.h
+.\hex\stats.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\hex\stats.o: D:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\hex\stats.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\hex\stats.o: D:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\hex\stats.o: ..\lwip\lwip_incl\opt.h
+.\hex\stats.o: ..\lwip\lwip_incl\def.h
+.\hex\stats.o: ..\lwip\lwip_incl\stats.h
+.\hex\stats.o: ..\lwip\lwip_incl\mem.h
+.\hex\stats.o: ..\lwip\lwip_incl\memp.h
+.\hex\stats.o: ..\lwip\lwip_incl\memp_std.h
+.\hex\stats.o: ..\lwip\lwip_incl\memp_std.h

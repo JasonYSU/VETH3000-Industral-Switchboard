@@ -1,0 +1,17 @@
+.\hex\slipif.o: ..\lwip\lwip_src\slipif.c
+.\hex\slipif.o: ..\lwip\lwip_incl\slipif.h
+.\hex\slipif.o: ..\lwip\lwip_incl\opt.h
+.\hex\slipif.o: ..\lwip\lwip_incl\lwipopts.h
+.\hex\slipif.o: ..\lwip\lwip_incl\debug.h
+.\hex\slipif.o: ..\lwip\lwip_incl\arch.h
+.\hex\slipif.o: ..\lwip\lwip_incl\cc.h
+.\hex\slipif.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\hex\slipif.o: D:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\hex\slipif.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\hex\slipif.o: D:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\hex\slipif.o: ..\lwip\lwip_incl\opt.h
+.\hex\slipif.o: ..\lwip\lwip_incl\netif.h
+.\hex\slipif.o: ..\lwip\lwip_incl\err.h
+.\hex\slipif.o: ..\lwip\lwip_incl\ip_addr.h
+.\hex\slipif.o: ..\lwip\lwip_incl\def.h
+.\hex\slipif.o: ..\lwip\lwip_incl\pbuf.h

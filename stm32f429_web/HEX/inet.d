@@ -1,0 +1,14 @@
+.\hex\inet.o: ..\lwip\lwip_src\inet.c
+.\hex\inet.o: ..\lwip\lwip_incl\opt.h
+.\hex\inet.o: ..\lwip\lwip_incl\lwipopts.h
+.\hex\inet.o: ..\lwip\lwip_incl\debug.h
+.\hex\inet.o: ..\lwip\lwip_incl\arch.h
+.\hex\inet.o: ..\lwip\lwip_incl\cc.h
+.\hex\inet.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\hex\inet.o: D:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\hex\inet.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\hex\inet.o: D:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\hex\inet.o: ..\lwip\lwip_incl\opt.h
+.\hex\inet.o: ..\lwip\lwip_incl\inet.h
+.\hex\inet.o: ..\lwip\lwip_incl\def.h
+.\hex\inet.o: ..\lwip\lwip_incl\ip_addr.h

@@ -1,0 +1,9 @@
+.\hex\system_stm32f4xx.o: ..\STM32F4xx_HAL_Driver\re_src\system_stm32f4xx.c
+.\hex\system_stm32f4xx.o: ..\STM32F4xx_HAL_Driver\re_incl\stm32f4xx.h
+.\hex\system_stm32f4xx.o: ..\STM32F4xx_HAL_Driver\re_incl\stm32f429xx.h
+.\hex\system_stm32f4xx.o: ..\STM32F4xx_HAL_Driver\CMSIS\Include\core_cm4.h
+.\hex\system_stm32f4xx.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\hex\system_stm32f4xx.o: ..\STM32F4xx_HAL_Driver\CMSIS\Include\core_cmInstr.h
+.\hex\system_stm32f4xx.o: ..\STM32F4xx_HAL_Driver\CMSIS\Include\core_cmFunc.h
+.\hex\system_stm32f4xx.o: ..\STM32F4xx_HAL_Driver\CMSIS\Include\core_cm4_simd.h
+.\hex\system_stm32f4xx.o: ..\STM32F4xx_HAL_Driver\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h

@@ -1,0 +1,17 @@
+.\hex\asn1_enc.o: ..\lwip\lwip_src\asn1_enc.c
+.\hex\asn1_enc.o: ..\lwip\lwip_incl\opt.h
+.\hex\asn1_enc.o: ..\lwip\lwip_incl\lwipopts.h
+.\hex\asn1_enc.o: ..\lwip\lwip_incl\debug.h
+.\hex\asn1_enc.o: ..\lwip\lwip_incl\arch.h
+.\hex\asn1_enc.o: ..\lwip\lwip_incl\cc.h
+.\hex\asn1_enc.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\hex\asn1_enc.o: D:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\hex\asn1_enc.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\hex\asn1_enc.o: D:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\hex\asn1_enc.o: ..\lwip\lwip_incl\opt.h
+.\hex\asn1_enc.o: ..\lwip\lwip_incl\snmp_asn1.h
+.\hex\asn1_enc.o: ..\lwip\lwip_incl\err.h
+.\hex\asn1_enc.o: ..\lwip\lwip_incl\pbuf.h
+.\hex\asn1_enc.o: ..\lwip\lwip_incl\snmp.h
+.\hex\asn1_enc.o: ..\lwip\lwip_incl\ip_addr.h
+.\hex\asn1_enc.o: ..\lwip\lwip_incl\def.h

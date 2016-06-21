@@ -1,0 +1,13 @@
+.\hex\def.o: ..\lwip\lwip_src\def.c
+.\hex\def.o: ..\lwip\lwip_incl\opt.h
+.\hex\def.o: ..\lwip\lwip_incl\lwipopts.h
+.\hex\def.o: ..\lwip\lwip_incl\debug.h
+.\hex\def.o: ..\lwip\lwip_incl\arch.h
+.\hex\def.o: ..\lwip\lwip_incl\cc.h
+.\hex\def.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\hex\def.o: D:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\hex\def.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\hex\def.o: D:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\hex\def.o: ..\lwip\lwip_incl\opt.h
+.\hex\def.o: ..\lwip\lwip_incl\def.h
+.\hex\def.o: ..\lwip\lwip_incl\err.h
